@@ -1,0 +1,11 @@
+use("platzi_store")
+
+// $push -> solo funciona para arrys - agrega elementos
+db.inventory.updateOne(
+  {_id: 4},
+  {
+    $push: {
+      tags: "headphone"
+    }
+  }
+)
