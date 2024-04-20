@@ -1,0 +1,17 @@
+use("platzi_store")
+
+//**** using $eq */
+// forma implicita
+// db.inventory.find({ qty: 20 })
+
+// forma explicita
+// db.inventory.find({ qty: { $eq: 20 } })
+
+// buscar sub documento forma implicita
+// db.inventory.find({ "item.code": "123" })
+
+// buscar sub documento forma explicita
+// db.inventory.find({ "item.code": { $eq: "123"} })
+
+//**** using $ne */
+db.inventory.find({ qty: { $ne: 20 } })
