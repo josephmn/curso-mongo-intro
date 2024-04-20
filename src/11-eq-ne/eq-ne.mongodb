@@ -1,6 +1,6 @@
 use("platzi_store")
 
-//**** using $eq */
+/** using $eq */
 // forma implicita
 // db.inventory.find({ qty: 20 })
 
@@ -13,5 +13,5 @@ use("platzi_store")
 // buscar sub documento forma explicita
 // db.inventory.find({ "item.code": { $eq: "123"} })
 
-//**** using $ne */
+/** using $ne */
 db.inventory.find({ qty: { $ne: 20 } })
