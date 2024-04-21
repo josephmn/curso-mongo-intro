@@ -1,18 +1,3 @@
 use("platzi_store")
 
-// db.inventory.find({ "item.description": "Single line description." })
-
-/** buscar line */
-// db.inventory.find({ "item.description": { $regex: /line/ } })
-
-/** buscar LINE con mayuscula o minuscula */
-// db.inventory.find({ "item.description": { $regex: /LINE/i } })
-
-/** el ultimo patron sea line */
-// db.inventory.find({ "item.description": { $regex: /line$/i } })
-
-/** buscar Single */
-// db.inventory.find({ "item.description": { $regex: /^single/i } })
-
-/** buscar en saltos de linea */
-db.inventory.find({ "item.description": { $regex: /^s/im } })
+db.inventory.find()
