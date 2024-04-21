@@ -1,7 +1,7 @@
 use("platzi_store")
 
-// // $pull -> solo funciona para arrys - quita elementos
-// // removiendo un elemento del array
+/** $pull -> solo funciona para arrys - quita elementos */
+/** removiendo un elemento del array */
 // db.inventory.updateMany(
 //   {}, //aqui puedes dejarlo {} y traera todos los documentos
 //   {
@@ -11,8 +11,8 @@ use("platzi_store")
 //   }
 // )
 
-// $in
-// removiendo mas de 1 elemento del array
+/** $in */
+/** removiendo mas de 1 elemento del array */
 db.inventory.updateMany(
   {},
   {
